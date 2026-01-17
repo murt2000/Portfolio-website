@@ -125,7 +125,7 @@ html {
 
     .two-layer {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         grid-template-columns: 1fr;
     }
 
@@ -148,7 +148,7 @@ html {
     }
 
     .description {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -160,5 +160,9 @@ html {
 
     .item {
         margin-left: 3rem;
+    }
+
+    .description {
+        width: 75%;
     }
 }

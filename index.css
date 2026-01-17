@@ -35,7 +35,7 @@ html {
     /*change later want 1 coloum for name + description one for links*/
     width: 55%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
 
     height: fit-content;
@@ -95,4 +95,39 @@ html {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+}
+
+/* phones*/
+@media (max-width: 600px) {
+    #title {
+        margin: 0;
+    }
+
+    #subTitle {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .banner-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+/*tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .banner-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #title {
+        margin: 0;
+    }
+
+    #subTitle {
+        font-size: 12px;
+        margin: 0;
+    }
 }
