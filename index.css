@@ -100,15 +100,17 @@ html {
 /* phones*/
 @media (max-width: 600px) {
     #title {
+        font-size: 14px;
         margin: 0;
     }
 
     #subTitle {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0;
     }
 
     .banner-row {
+        width: 65%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -118,6 +120,7 @@ html {
 /*tablets*/
 @media (min-width: 601px) and (max-width: 1024px) {
     .banner-row {
+        width: 65%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
