@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Zalando Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+
+
+    background-color: rgb(244, 244, 244);
+}
+
+.two-layer .img {
+    height: 100%;
+    width: 100%;
+}
+
+.tech-title {
+    margin-left: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    height: 2em;
+    width: 10em;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.icon {
+    height: auto;
+    width: 2em;
+}
+
+
+
+.section {
+    grid-template-rows: auto;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100rem;
+    padding-left: 1.5em;
+}
+
+.item {
+    margin-left: 10rem;
+}
+
+.two-layer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description {
+    width: 55%;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.year {
+    margin-left: 5%;
+}
+
+
+.timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-auto-rows: auto;
+    /* grows with content */
+    row-gap: 2rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    column-gap: 1rem;
+    min-height: 5rem;
+    align-items: start;
+    position: relative;
+}
+
+.row::before {
+    position: relative;
+    content: "";
+    width: 1.4em;
+    height: 1.4em;
+
+
+    border-radius: 50%;
+    background: rgb(48, 48, 48);
+    justify-self: center;
+
+    z-index: 1;
+
+
+
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: calc(2.5rem / 2);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #444;
+    transform: translateX(-50%);
+}
+
+.web-link {
+    color: blue;
+}

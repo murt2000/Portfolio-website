@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Zalando Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+
+
+.content {
+
+    position: absolute;
+
+    /* above circles */
+    width: 95%;
+    margin: 0 auto;
+    inset: 0;
+    z-index: 1;
+
+
+    display: grid;
+    align-items: center;
+}
+
+
+.banner-row {
+    background-color: rgb(200, 200, 200);
+    /*change later want 1 coloum for name + description one for links*/
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+
+    height: fit-content;
+    border: solid black 1px;
+}
+
+.linkItem {
+    font-size: 18px;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.logoImg {
+    line-height: 1;
+    width: 24px;
+
+}
+
+#title {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 1rem;
+}
+
+#subTitle {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 2rem;
+
+}
+
+#subTitle h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#link {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+
+}
+
+#git {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
